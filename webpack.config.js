@@ -20,6 +20,8 @@ module.exports = {
             '@icons': path.resolve(__dirname, 'src/assets/icons/'),
             '@logos': path.resolve(__dirname, 'src/assets/logos/'),
             '@images': path.resolve(__dirname, 'src/assets/images'),
+            '@hooks': path.resolve(__dirname, 'src/hooks'),
+            '@context': path.resolve(__dirname, 'src/context')
         }
     },
     module: {
