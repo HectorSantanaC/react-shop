@@ -23,6 +23,13 @@
 	font-size: var(--lg);
 	font-weight: bold;
 }
+.my-order-content {
+	height: 55vh;
+	overflow: auto;
+}
+.my-order-content::-webkit-scrollbar {
+	display: none;
+}
 .order {
 	display: grid;
 	grid-template-columns: auto 1fr;
@@ -45,7 +52,6 @@
 	text-align: end;
 	font-weight: bold;
 }
-
 .primary-button {
 	background-color: var(--hospital-green);
 	border-radius: 8px;

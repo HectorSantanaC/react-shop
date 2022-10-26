@@ -25,6 +25,9 @@ const sumTotal = () => {
                     <OrderItem product={product} key={`orderItem-${product.id}`} />
                 ))}
                 
+                
+            </div>
+            <div className='checkout'>
                 <div className="order">
                     <p>
                         <span>Total</span>
