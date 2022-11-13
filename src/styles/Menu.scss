@@ -38,3 +38,54 @@
 	margin-bottom: 20px;
 	display: inline-block;
 }
+
+@media (max-width: 640px) {
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    position: fixed;
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    top: 61px;
+    left: 0;
+    box-sizing: border-box;
+  }
+  .mobileMenu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+  }
+  .mobileMenu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+  }
+  .mobileMenu ul:nth-child(2) {
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  .mobileMenu ul li {
+    margin-bottom: 24px;
+  }
+  .mobileMenu .email {
+    font-size: var(--sm);
+    font-weight: 300;
+  }
+  .mobileMenu .sign-out {
+    font-size: var(--md);
+    color: var(--hospital-green);
+  }
+  .mobileMenu .user {
+    margin: 90px 0 5px 0;
+  }
+  .mobileMenu img {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    display: flex;
+    right: 0;
+    margin-right: 24px;
+  }
+}
+

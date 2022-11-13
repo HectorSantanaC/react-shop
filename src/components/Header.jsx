@@ -3,6 +3,7 @@ import '@styles/Header.scss';
 import Menu from '@components/Menu';
 import AppContext from '@context/AppContext';
 import MyOrder from '@containers/MyOrder';
+import MobileMenu from '@components/MobileMenu';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
@@ -10,15 +11,20 @@ import shoppingCart from '@icons/icon_shopping_cart.svg';
 const Header = () => {
     const[toggle, setToggle] = useState(false);
     const[toggleOrders, setToggleOrders] = useState(false);
+    const[toggleMobileMenu, setToggleMobileMenu] = useState(false);
     const { state } = useContext(AppContext);
 
     const handleToggle = () => {
         setToggle(!toggle);
     }
 
+    const handleToggleMenu = () => {
+        setToggleMobileMenu(!toggleMobileMenu);
+    }
+
     return (
         <nav>
-            <img src={menu} alt="menu" className="menu" />
+            <img src={menu} alt="menu" className="menu" onClick={handleToggleMenu}/>
             <div className="navbar-left">
                 <img src={logo} alt="logo" className="nav-logo" />
                 <ul>
@@ -58,6 +64,7 @@ const Header = () => {
             </div>
             {toggle && <Menu />}
             {toggleOrders && <MyOrder toggleOrders={toggleOrders} setToggleOrders={setToggleOrders} />}
+            {toggleMobileMenu && <MobileMenu />}
         </nav>
     );
 };

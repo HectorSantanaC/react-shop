@@ -13,7 +13,7 @@ nav {
 .menu {
 	display: none;
 }
-.logo {
+.nav-logo {
 	width: 100px;
 }
 .navbar-left ul,
@@ -66,6 +66,9 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.mobileMenu {
+	display: none;
 }
 @media (max-width: 640px) {
 	.menu {
