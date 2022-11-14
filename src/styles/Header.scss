@@ -70,6 +70,13 @@ nav {
 .mobileMenu {
 	display: none;
 }
+.shoppingCartIcon{
+  cursor: pointer;
+}
+.navbar-email {
+  cursor: pointer;
+}
+
 @media (max-width: 640px) {
 	.menu {
 		display: block;

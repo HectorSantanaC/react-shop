@@ -23,9 +23,9 @@ const ProductItem = ({ product }) => {
                     </div>
                     <figure onClick={() => handleClick(product)} >
                         { itsProductAdded() ? (
-                            <img src={addedToCartImage} alt="" />
+                            <img src={addedToCartImage} alt="addedToCartImage" className='addedToCartImage'/>
                             ) : (
-                            <img src={addToCartImage} alt="" />
+                            <img src={addToCartImage} alt="addToCartImage" className='addToCartImage'/>
                             )
                         }
                     </figure>

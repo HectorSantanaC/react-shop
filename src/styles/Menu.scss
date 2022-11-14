@@ -40,6 +40,9 @@
 }
 
 @media (max-width: 640px) {
+  .Menu {
+    display: none;
+  }
   .mobileMenu {
     display: flex;
     flex-direction: column;
@@ -86,6 +89,10 @@
     display: flex;
     right: 0;
     margin-right: 24px;
+    cursor: pointer;
+  }
+  .menu {
+    cursor: pointer;
   }
 }
 

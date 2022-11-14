@@ -17,7 +17,8 @@ const sumTotal = () => {
         <aside className="MyOrder">
             <div className="title-container">
                 <img src={flechita}
-                alt="arrow" 
+                alt="arrow"
+                className='arrow'
                 onClick={() => setToggleOrders(!toggleOrders)} />
                 <p className="title">My order</p>
             </div>
