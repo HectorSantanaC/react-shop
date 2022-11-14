@@ -5,11 +5,15 @@ nav {
 	justify-content: space-between;
 	padding: 0 24px;
 	border-bottom: 1px solid var(--very-light-pink);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: var(--white);
 }
 .menu {
 	display: none;
 }
-.logo {
+.nav-logo {
 	width: 100px;
 }
 .navbar-left ul,
@@ -17,6 +21,7 @@ nav {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	margin-right: 50px;
 	display: flex;
 	align-items: center;
 	height: 60px;
@@ -62,6 +67,16 @@ nav {
 	justify-content: center;
 	align-items: center;
 }
+.mobileMenu {
+	display: none;
+}
+.shoppingCartIcon{
+  cursor: pointer;
+}
+.navbar-email {
+  cursor: pointer;
+}
+
 @media (max-width: 640px) {
 	.menu {
 		display: block;

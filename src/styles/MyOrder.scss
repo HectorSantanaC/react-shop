@@ -4,7 +4,7 @@
 	width: 360px;
 	padding: 24px;
 	box-sizing: border-box;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	background-color: var(--white);
 	top: 60px;
@@ -22,6 +22,13 @@
 .title {
 	font-size: var(--lg);
 	font-weight: bold;
+}
+.my-order-content {
+	height: 55vh;
+	overflow: auto;
+}
+.my-order-content::-webkit-scrollbar {
+	display: none;
 }
 .order {
 	display: grid;
@@ -45,7 +52,6 @@
 	text-align: end;
 	font-weight: bold;
 }
-
 .primary-button {
 	background-color: var(--hospital-green);
 	border-radius: 8px;
@@ -56,6 +62,9 @@
 	font-size: var(--md);
 	font-weight: bold;
 	height: 50px;
+}
+.arrow {
+	cursor: pointer;
 }
 @media (max-width: 640px) {
 	.MyOrder {
